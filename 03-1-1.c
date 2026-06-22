@@ -1,4 +1,4 @@
-/* #include <stdio.h>
+#include <stdio.h>
 
 int main() {
    int num1, num2;
@@ -8,4 +8,3 @@ int main() {
    printf("num1 * num2 = %d",num1 * num2);
    return 0;
 }
-*/
