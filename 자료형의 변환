@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    double num1 = 128; //128.0(double)로 바뀜
+    int num2 = 3.1415; //실수 -> 정수이므로 소수점 절삭됌(3)
+    
+    int num3 = 129;
+    char ch = num3; //int(4바이트) -> char(1바이트)로 변환되니 
+                    // 00000000 00000000 00000000 10000001
+                    //10000001 에 보수 취하고 1더함 
+                    // 0111 1110 2~64(6) 2*(2^6-1)+1 = -127이 출력됌.
+    printf(" 128 -> double : %f\n",num1);
+    printf(" 3.1415 -> int : %d\n",num2);
+    printf(" int(129) -> char : %d",ch);
+    
+    return 0;
+        
+
+}
